@@ -1,0 +1,36 @@
+<html><head><title>Перевод компьютера в новый домен</title>
+  <script language="VBScript">
+ <!-- 
+ Sub OKButton2_OnClick
+       KL3=true
+	if document.UsForm0.password0.value = "" then
+	Alert "Поле пароля пустое"
+	KL3=false
+	else
+		if document.UsForm0.password0.value <>  document.UsForm0.password1.value then
+		Alert "Пароли не совпадают"
+		KL3=false
+		end if
+	end if
+	if KL3 then
+        OkClicked2.Value = 1
+	end if
+      End Sub  
+	  '-->
+ </script>
+</head>
+<body>
+
+ <form name = "UsForm0" style = "background-color:menu; width:350;height:60; 
+                                padding:10;">
+ <fieldset>
+ <legend> Всё-таки введите свой текущий, ПРАВИЛЬНЫЙ пароль</legend>
+<FONT COLOR="red">Пароль:</FONT> <input type=password name="password0"><br>
+<FONT COLOR="red">Подтверждение:</FONT> <input type=password name="password1"><br>
+Поле на всякий случай: <input type=text name="exam"><br>
+ <FONT SIZE="-2">Если не знаете как у вас получется пароль ,введите его в "поле на всякий случай", подумайте, это то что вы хотели ?!</FONT><br>
+</form>
+<INPUT NAME="OKButton2" TYPE="BUTTON" VALUE="Все правильно ..." >
+<input type="hidden" name="OKClicked2" size="20">
+
+</body></html>

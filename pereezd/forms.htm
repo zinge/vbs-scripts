@@ -1,0 +1,53 @@
+<html><head><title>Перевод компьютера в новый домен</title>
+  <script language="VBScript">
+ <!-- 
+ Sub OKButton1_OnClick
+       KL3=true
+	if document.UsForm.LastName.value = "" then
+	Alert "Введите свою фамилию"
+	KL3=false
+	else
+		if document.UsForm.FirstName.value = "" then
+		Alert "Введите своё имя"
+		KL3=false
+		else
+			if document.UsForm.TrName.value = "" then
+			Alert "Введите своё отчество"
+			KL3=False
+			Else
+				if document.UsForm.password.value = "" then
+				Alert "Поле пароля пустое"
+				KL3=false
+				else
+					if document.UsForm.password.value <>  document.UsForm.password2.value then
+					Alert "Пароли не совпадают"
+					KL3=false
+					end if
+				end if
+			end if
+		end if
+	end if
+	if KL3 then
+        OkClicked1.Value = 1
+	end if
+      End Sub  
+	  '-->
+ </script>
+</head>
+<body>
+
+ <form name = "UsForm" style = "background-color:menu; width:150;height:60; 
+                                padding:10;">
+ <fieldset>
+ <legend> Запрос сведений о пользователе </legend>
+<FONT COLOR="red">Фамилия:</FONT> <input type=text name="LastName"><br>
+<FONT COLOR="red">Имя:</FONT> <input type=text name="FirstName"><br>
+<FONT COLOR="red">Отчество:</FONT> <input type=text name="TrName"><br>
+<FONT SIZE="-2">Введите текущий пароль 2 раза</FONT><br>
+<FONT COLOR="red">Пароль:</FONT> <input type=password name="password"><br>
+<FONT COLOR="red">Подтверждение:</FONT> <input type=password name="password2"><br>
+</form>
+<INPUT NAME="OKButton1" TYPE="BUTTON" VALUE="Все правильно ..." >
+<input type="hidden" name="OKClicked1" size="20">
+
+</body></html>
